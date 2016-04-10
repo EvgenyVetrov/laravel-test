@@ -10,14 +10,7 @@
         <div class="container">
 
             <h1 class="text-center">{{ isset($pagetitle) ? $pagetitle : "гостевая" }}</h1></hr>
-            @for($i=0; $i<5; $i++)
-                <p># {{ $i }}</p>
-            @endfor
 
-            @foreach($users as $user)
-
-                <p>{{ $user['name'] }}</p>
-            @endforeach
             @yield('content')
 
 
